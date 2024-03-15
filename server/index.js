@@ -81,7 +81,7 @@ io.on('connection', (socket) => {
             });
             const image = await sharp(download_url).toBuffer();
             const code = image.toString('base64');
-            socket.emit('qr-to-esp', download_url)
+            socket.emit('show QR', code)
         }
 
 
@@ -104,7 +104,7 @@ io.on('connection', (socket) => {
                   })
 
                   if(charge.status === 'successful'){
-                    socket.emit('Card-success')
+                    socket.emit('card-success')
                   }
 
             })

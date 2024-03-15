@@ -26,6 +26,13 @@
 - [Omise](https://github.com/omise)
 
 ### ไดเรคตอรี
+- server
+    - แสดง source code การทำงานของ server
+- web
+    - แสดง source code การสร้างหน้า website รองรับ responsive
+- arduino 
+    - แสดง source code การทำงานของ ESP ทั้ง 2 ตัว
+
 
 
 

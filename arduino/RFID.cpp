@@ -65,8 +65,8 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
       Serial.println("Connected to WebSocket Server");
       break;
     case WStype_TEXT:
-      if (strcmp((char *)payload, "CARD READER") == 0) {
-        Serial.println("Received command: CARD READER");
+      if (strcmp((char *)payload, "Get-Card") == 0) {
+        Serial.println("Received command: Get-Card");
         shouldReadCard = true;
       }
       break;
